@@ -163,6 +163,21 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
+        <!--
+        springdoc adds swagger, accessible via:
+        http://localhost:8080/WebGoat/v3/api-docs
+        http://localhost:8080/WebGoat/swagger-ui.html
+        -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-data-rest</artifactId>
+            <version>1.5.10</version>
+        </dependency>
     </dependencies>
 
     <build>

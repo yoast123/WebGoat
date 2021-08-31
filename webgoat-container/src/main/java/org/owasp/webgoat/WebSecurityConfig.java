@@ -59,6 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry security = http
                 .authorizeRequests()
                 .antMatchers("/css/**", "/images/**", "/js/**", "fonts/**", "/plugins/**", "/registration", "/register.mvc").permitAll()
+                .antMatchers("/v3/**", "/swagger*", "/swagger-ui/**").permitAll()
                 .anyRequest().authenticated();
         security.and()
                 .formLogin()
